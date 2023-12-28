@@ -12,10 +12,10 @@ export const TimeLine = () => {
         <VerticalTimeline>
             <VerticalTimelineElement
                 className="vertical-timeline-element--study"
-                contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+                contentStyle={{ background: '#0090c1', color: '#fff' }}
+                contentArrowStyle={{ borderRight: '7px solid #0090c1' }}
                 date="09/2018 - 06/2020"
-                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                iconStyle={{ background: '#0090c1', color: '#fff' }}
                 icon={<ImBooks />}
             >
                 <PStyled type='clear'>
@@ -25,10 +25,10 @@ export const TimeLine = () => {
 
             <VerticalTimelineElement
                 className="vertical-timeline-element--study"
-                contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+                contentStyle={{ background: '#0090c1', color: '#fff' }}
+                contentArrowStyle={{ borderRight: '7px solid #0090c1' }}
                 date="09/2020 - 06/2022"
-                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                iconStyle={{ background: '#0090c1', color: '#fff' }}
                 icon={<ImBooks />}
             >
                 <PStyled type='clear'>
@@ -38,10 +38,10 @@ export const TimeLine = () => {
 
             <VerticalTimelineElement
                 className="vertical-timeline-element--work"
-                contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+                contentStyle={{ background: '#0090c1', color: '#fff' }}
+                contentArrowStyle={{ borderRight: '7px solid #0090c1' }}
                 date="07/2022 - 05/2023"
-                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                iconStyle={{ background: '#0090c1', color: '#fff' }}
                 icon={<MdComputer />}
             >
                 <PStyled type='clear'>
@@ -51,10 +51,10 @@ export const TimeLine = () => {
 
             <VerticalTimelineElement
                 className="vertical-timeline-element--work"
-                contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+                contentStyle={{ background: '#0090c1', color: '#fff' }}
+                contentArrowStyle={{ borderRight: '7px solid #0090c1' }}
                 date="06/2023 - 06/2023"
-                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                iconStyle={{ background: '#0090c1', color: '#fff' }}
                 icon={<MdComputer />}
             >
                 <PStyled type='clear'>
@@ -64,10 +64,10 @@ export const TimeLine = () => {
 
             <VerticalTimelineElement
                 className="vertical-timeline-element--study"
-                contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+                contentStyle={{ background: '#0090c1', color: '#fff' }}
+                contentArrowStyle={{ borderRight: '7px solid #0090c1' }}
                 date="10/2023 - Actualidad"
-                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                iconStyle={{ background: '#0090c1', color: '#fff' }}
                 icon={<ImBooks />}
             >
                 <PStyled type='clear'>
