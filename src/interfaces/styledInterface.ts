@@ -7,3 +7,7 @@ export interface PStyledInterface{
 export interface DivContainerStyledInterface{
     type: string
 }
+
+export interface TitleStyledInterface{
+    color?: string
+}
