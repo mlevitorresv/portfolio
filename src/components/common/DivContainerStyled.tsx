@@ -1,9 +1,11 @@
 import styled from "styled-components";
+import { DivContainerStyledInterface } from "../../interfaces/styledInterface";
 
 
 
-export const DivContainerStyled = styled.div`
-    background-color: ${props => props.typeof === 'dark' ? '#022F40' : props.typeof === 'medium' ? '#38AECC' : 'white'};
+export const DivContainerStyled = styled.div<DivContainerStyledInterface>`
+    background-color: ${props => props.type === 'dark' ? '#022F40' : props.typeof === 'medium' ? '#38AECC' : 'white'};
     width: 100%;
-    padding: 2em 2em 3em;
+    padding: 2em 0 3em;
+    content-align: center;
 `

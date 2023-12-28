@@ -7,10 +7,6 @@ export const HeaderStyled = styled.header`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1em 0;
+    padding: 0;
     width: 100%;
-
-    position: absolute;
-    top: 0;
-    left: 0;
 `

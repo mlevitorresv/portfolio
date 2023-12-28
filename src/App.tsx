@@ -1,10 +1,12 @@
-import { Index } from './pages/Index'
+import { About } from './components/about/About'
+import { Header } from './components/header/Header'
 
 
 function App() {
   return (
     <>
-      <Index />
+      <Header />
+      <About />
     </>
   )
 }
