@@ -11,3 +11,7 @@ export interface DivContainerStyledInterface{
 export interface TitleStyledInterface{
     color?: string
 }
+
+export interface ImageStyledInterface{
+    size: string
+}
