@@ -26,6 +26,12 @@ export const Skills = () => {
                 <ImageStyled src='src\assets\node.png' alt='Node icon' size='small' />
                 <ImageStyled src='src\assets\express.png' alt='Express icon' size='large' />
             </ImagesContainerStyled>
+
+            <TitleStyled color='white'>HERRAMIENTAS</TitleStyled>
+            <ImagesContainerStyled>
+                <ImageStyled src='src\assets\postman.png' alt='Postman icon' size='small' />
+                <ImageStyled src='src\assets\vs.png' alt='VS Code icon' size='small' />
+            </ImagesContainerStyled>
         </DivContainerStyled>
     )
 }
