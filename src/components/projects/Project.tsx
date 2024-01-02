@@ -6,7 +6,7 @@ import { ProjectInterface } from '../../interfaces/componentsInterface'
 
 export const Project = (props: ProjectInterface) => {
   return (
-    <ProjectStyled>
+    <ProjectStyled className='shadow slide-item transition-all'>
         <img src={props.img} alt={props.alt} />
         <TitleStyled color='white'>{props.title}</TitleStyled>
         <PStyled type='clear'>
