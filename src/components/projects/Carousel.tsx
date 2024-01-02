@@ -41,7 +41,8 @@ export const Carousel = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         centerMode: true,
-        centerPadding: '0px'
+        centerPadding: '0px',
+        arrows: false
     }
 
     return (
