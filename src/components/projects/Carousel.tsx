@@ -36,14 +36,14 @@ export const Carousel = () => {
     }, [dispatch, projectListStatus, projectListError])
 
     const settings = {
-        dots: false,
+        dots: true,
         infinite: true,
-        speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        centerMode: true,
-        centerPadding: '0px',
-        arrows: false
+        autoplay: true,
+        speed: 3000,
+        autoplaySpeed: 4000,
+        cssEase: "linear"
     }
 
     return (
@@ -56,7 +56,7 @@ export const Carousel = () => {
                 <div className='flex items-center justify-center'>
                     <div className="w-full">
                         <Slider {...settings} >
-                            {projectListData.map((project: ProjectInterface)  =>  (
+                            {projectListData.map((project: ProjectInterface) => (
                                 <LinkStyled href={project.link}><Project img={project.img} alt={project.alt} title={project.title} desc={project.desc} /></LinkStyled>
                             ))}
                         </Slider>
