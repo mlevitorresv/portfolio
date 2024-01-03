@@ -10,6 +10,7 @@ import { ProjectInterface } from '../../interfaces/componentsInterface'
 import { getProjectData, getProjectError, getProjectStatus } from '../../features/projects/projectSlice'
 import { getProjectFromJSONThunk } from '../../features/projects/projectThunk'
 import { Project } from './Project';
+import { LinkStyled } from '../common/LinkStyled';
 
 export const Carousel = () => {
 
@@ -54,9 +55,9 @@ export const Carousel = () => {
             ) : (
                 <div className='flex items-center justify-center'>
                     <div className="w-full">
-                        <Slider {...settings}>
+                        <Slider {...settings} >
                             {projectListData.map((project: ProjectInterface)  =>  (
-                                <Project img={project.img} alt={project.alt} title={project.title} desc={project.desc} />
+                                <LinkStyled href={project.link}><Project img={project.img} alt={project.alt} title={project.title} desc={project.desc} /></LinkStyled>
                             ))}
                         </Slider>
                     </div>
