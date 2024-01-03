@@ -15,3 +15,7 @@ export interface TitleStyledInterface {
 export interface ImageStyledInterface {
     size: string
 }
+
+export interface ImagesContainerStyledInterface {
+    type?: string;
+}

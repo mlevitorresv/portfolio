@@ -6,15 +6,6 @@ import { ImagesContainerStyled } from '../common/ImagesContainerStyled'
 
 export const Contact = () => {
 
-    const downloadCV = () => {
-        const url = 'src/assets/docCV.pdf';
-        const link: HTMLAnchorElement = document.createElement('a');
-        link.href = url;
-        link.download = `Mlevitorresv.pdf`
-        link.click();
-        document.body.removeChild(link);
-    }
-
     return (
         <DivContainerStyled type='clear'>
             <TitleStyled>CONTÁCTAME</TitleStyled>
@@ -29,8 +20,8 @@ export const Contact = () => {
                         <ImageStyled src='src\assets\linkedin.png' alt='Linkedin icon' size='contact' />
                     </a>
                 </abbr>
-                <abbr title="descargar CV">
-                    <ImageStyled src='src\assets\cv.png' alt='CV icon' size='contact' onClick={downloadCV} />
+                <abbr title="620 468 240">
+                        <ImageStyled src='src\assets\whatsapp.png' alt='Whatsapp icon' size='contact' />
                 </abbr>
             </ImagesContainerStyled>
         </DivContainerStyled>
