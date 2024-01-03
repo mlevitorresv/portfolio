@@ -21,13 +21,13 @@ export const projectSlice = createSlice({
             state.status = "fulfilled"
             state.data = action.payload
         })
-        .addCase(getProjectFromJSONThunk.rejected, (state, action): void => {
-            state.status = "rejected"
-            state.error = action.error.message
-        })
-        .addCase(getProjectFromJSONThunk.pending, (state, action): void => {
-            state.status = "pending"
-        })
+            .addCase(getProjectFromJSONThunk.rejected, (state, action): void => {
+                state.status = "rejected"
+                state.error = action.error.message
+            })
+            .addCase(getProjectFromJSONThunk.pending, (state, action): void => {
+                state.status = "pending"
+            })
     }
 
 })
@@ -35,4 +35,4 @@ export const projectSlice = createSlice({
 
 export const getProjectData = (state: RootState): ProjectInterface[] => state.project.data;
 export const getProjectStatus = (state: RootState): string => state.project.status;
-export const getProjectError  = (state: RootState): string | undefined => state.project.error;
+export const getProjectError = (state: RootState): string | undefined => state.project.error;

@@ -1,17 +1,17 @@
 
 
-export interface PStyledInterface{
+export interface PStyledInterface {
     type: string
 }
 
-export interface DivContainerStyledInterface{
+export interface DivContainerStyledInterface {
     type: string
 }
 
-export interface TitleStyledInterface{
+export interface TitleStyledInterface {
     color?: string
 }
 
-export interface ImageStyledInterface{
+export interface ImageStyledInterface {
     size: string
 }

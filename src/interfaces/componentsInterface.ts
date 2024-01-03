@@ -1,4 +1,4 @@
-export interface ProjectInterface{
+export interface ProjectInterface {
     link?: string,
     img: string,
     alt: string,

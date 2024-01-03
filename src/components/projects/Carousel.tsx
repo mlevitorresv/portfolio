@@ -58,7 +58,9 @@ export const Carousel = () => {
                     <div className="w-full">
                         <Slider {...settings} >
                             {projectListData.map((project: ProjectInterface) => (
-                                <LinkStyled href={project.link}><Project img={project.img} alt={project.alt} title={project.title} desc={project.desc} /></LinkStyled>
+                                <LinkStyled href={project.link}>
+                                    <Project img={project.img} alt={project.alt} title={project.title} desc={project.desc} />
+                                </LinkStyled>
                             ))}
                         </Slider>
                     </div>
