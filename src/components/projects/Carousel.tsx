@@ -43,7 +43,8 @@ export const Carousel = () => {
         autoplay: true,
         speed: 3000,
         autoplaySpeed: 4000,
-        cssEase: "linear"
+        cssEase: "linear",
+        arrows: false
     }
 
     return (
