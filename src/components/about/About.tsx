@@ -3,15 +3,15 @@ import { PStyled } from '../common/PStyled'
 import { DivContainerStyled } from '../common/DivContainerStyled'
 import { PhotoStyled } from './PhotoStyled'
 import { DivRowStyled } from '../common/DivRowStyled'
+import { TitleStyled } from '../common/TitleStyled'
 
 export const About = (): React.JSX.Element => {
   return (
     <DivRowStyled type='dark'>
-      <PhotoStyled src='src\assets\levi.jpg' alt='levi`s photo' />
       <DivContainerStyled type='dark'>
+        <PhotoStyled src='src\assets\developer.gif' alt='gif about developer' />
         <PStyled type='clear'>
-          Hola, soy Manuel Leví.<br />
-          Soy desarrollador web full stack, apasionado de la tecnología y
+          Desarrollador web full stack, apasionado de la tecnología y
           el desarrollo de las aplicaciones web.
         </PStyled>
         <PStyled type='clear'>

@@ -2,6 +2,7 @@
 
 export interface PStyledInterface {
     type: string
+    text?: string
 }
 
 export interface DivContainerStyledInterface {
@@ -9,7 +10,8 @@ export interface DivContainerStyledInterface {
 }
 
 export interface TitleStyledInterface {
-    color?: string
+    color?: string,
+    type?: string
 }
 
 export interface ImageStyledInterface {
