@@ -7,7 +7,7 @@ import { Projects } from './components/projects/Projects'
 import { Skills } from './components/skills/Skills'
 import { Training } from './components/training/Training'
 import { store } from './app/store'
-import { Presentation } from './components/presentation/presentation'
+import { Presentation } from './components/presentation/Presentation'
 
 
 function App() {
