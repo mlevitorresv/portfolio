@@ -9,7 +9,7 @@ export const About = (): React.JSX.Element => {
   return (
     <DivRowStyled type='dark'>
       <DivContainerStyled type='dark'>
-        <PhotoStyled src='src\assets\developer.gif' alt='gif about developer' />
+        <PhotoStyled src='src\assets\developer.gif' alt='gif about developer' type='special'/>
         <PStyled type='clear'>
           Siempre he sido una persona a la que le apasiona la tecnología, 
           desde pequeño me interesaba por todo aquello que tuviese una pantalla 

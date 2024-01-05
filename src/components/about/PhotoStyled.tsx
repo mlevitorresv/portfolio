@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import { PhotoStyledInterface } from "../../interfaces/styledInterface";
 
 
-export const PhotoStyled = styled.img`
+export const PhotoStyled = styled.img<PhotoStyledInterface>`
     display: block;
     border-radius: 50%;
     width: 10em;
@@ -12,5 +13,6 @@ export const PhotoStyled = styled.img`
         width: 12em;
         height: ato;
         border-radius: 20px;
+        float: ${props => props.type === 'special' ? 'right' : ''}
     }
 `

@@ -21,3 +21,7 @@ export interface ImageStyledInterface {
 export interface ImagesContainerStyledInterface {
     type?: string;
 }
+
+export interface PhotoStyledInterface {
+    type?: string
+}
