@@ -10,6 +10,7 @@ export const DivRowStyled = styled.div<DivContainerStyledInterface>`
     @media only screen and (min-width: 1000px){
         flex-direction: row;
         justify-content: space-between;
-        padding: 0 10%;
+        padding: 0 20%;
+        width: 60%;
     }
 `
