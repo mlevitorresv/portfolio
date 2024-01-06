@@ -31,7 +31,7 @@ export const About = (): React.JSX.Element => {
           conmigo mismo.       
         </PStyled>
         <PStyled type='clear'>
-          !Ah y que no se me olvide, me encanta la música¡ Vivo con ella... <MusicIconStyled />
+          ¡Ah y que no se me olvide, me encanta la música! Vivo con ella... <MusicIconStyled />
         </PStyled>
         
       </DivContainerStyled>
