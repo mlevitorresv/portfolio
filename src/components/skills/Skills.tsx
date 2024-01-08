@@ -7,7 +7,7 @@ import { DivRowStyled } from '../common/DivRowStyled'
 
 export const Skills = () => {
     return (
-        <DivContainerStyled type='medium'>
+        <DivContainerStyled type='medium-gradient'>
             <TitleStyled>CONOCIMIENTOS</TitleStyled>
             <DivRowStyled type='medium'>
                 <DivContainerStyled type='medium'>

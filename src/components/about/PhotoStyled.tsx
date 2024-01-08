@@ -11,7 +11,7 @@ export const PhotoStyled = styled.img<PhotoStyledInterface>`
 
     @media only screen and (min-width: 1000px){
         width: ${props => props.type === 'special' ? '18em' : '12em'};
-        height: ${props => props.type === 'special' ? '100%' : 'auto'};
+        height: ${props => props.type === 'special' ? '60%' : 'auto'};
         border-radius: 20px;
         float: ${props => props.type === 'special' ? 'right' : ''}
     }

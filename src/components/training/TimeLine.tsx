@@ -9,7 +9,7 @@ import { MdComputer } from "react-icons/md";
 
 export const TimeLine = () => {
     return (
-        <VerticalTimeline>
+        <VerticalTimeline lineColor='#0090c1'>
             <VerticalTimelineElement
                 className="vertical-timeline-element--study"
                 contentStyle={{ background: '#0090c1', color: '#fff' }}
@@ -19,7 +19,7 @@ export const TimeLine = () => {
                 icon={<ImBooks />}
             >
                 <PStyled type='clear'>
-                    F.P.G.M Sistemas Microinformáticos y Redes (I.E.S Venancio Blanco)
+                    F.P.G.M Sistemas Microinformáticos y Redes
                 </PStyled>
             </VerticalTimelineElement>
 
@@ -32,7 +32,7 @@ export const TimeLine = () => {
                 icon={<ImBooks />}
             >
                 <PStyled type='clear'>
-                    F.P.G.S Desarrollo de Aplicaciones Multiplataforma (I.E.S Venancio Blanco)
+                    F.P.G.S Desarrollo de Aplicaciones Multiplataforma
                 </PStyled>
             </VerticalTimelineElement>
 
@@ -58,7 +58,7 @@ export const TimeLine = () => {
                 icon={<MdComputer />}
             >
                 <PStyled type='clear'>
-                    Técnico en Operaciones de Sistemas Informáticos (ZAIDAN 2010 S.L.)
+                    Técnico en Operaciones de Sistemas Informáticos
                 </PStyled>
             </VerticalTimelineElement>
 

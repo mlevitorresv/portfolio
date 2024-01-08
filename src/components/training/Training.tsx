@@ -5,7 +5,7 @@ import { TimeLine } from './TimeLine'
 
 export const Training = (): React.JSX.Element => {
   return (
-    <DivContainerStyled type='clear'>
+    <DivContainerStyled type='clear-gradient'>
       <TitleStyled>MI VIDA INFORMÁTICA</TitleStyled>
       <TimeLine />
     </DivContainerStyled>

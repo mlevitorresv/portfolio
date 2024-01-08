@@ -7,15 +7,15 @@ import { MusicIconStyled } from '../common/IconStyled'
 
 export const About = (): React.JSX.Element => {
   return (
-    <DivRowStyled type='dark'>
-      <DivContainerStyled type='dark'>
+    <DivRowStyled type='dark-gradient'>
+      <DivContainerStyled type='transparent'>
         <PhotoStyled src='src\assets\developer.gif' alt='gif about developer' type='special'/>
         <PStyled type='clear'>
           Siempre he sido una persona a la que le apasiona la tecnología, 
           desde pequeño me interesaba por todo aquello que tuviese una pantalla 
           y un teclado, me gustaba trastear, investigar y saber mucho sobre este mundo.
           Siempre tuve claro que quería dedicarme a la informática, por ello en 2018 decidí cursar
-          un F.P.G.M en sistemas microinformáticos y redes, después un F.P.G.S de Desarrollo de Aplicaciones
+          un F.P.G.M en sistemas microinformáticos y redes, después, un F.P.G.S de Desarrollo de Aplicaciones
           Multiplataforma.
         </PStyled>
         <PStyled type='clear'>

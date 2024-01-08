@@ -15,6 +15,6 @@ export const PStyled = styled.p<PStyledInterface>`
 
     @media only screen and (min-width: 1000px){
         width: 50em;
-        margin: 0;
+        margin: 1em 0 0;
     }
 `
