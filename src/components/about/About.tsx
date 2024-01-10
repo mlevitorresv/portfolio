@@ -10,7 +10,7 @@ export const About = (): React.JSX.Element => {
     <DivRowStyled type='dark-gradient'>
       <DivContainerStyled type='transparent'>
         <PhotoStyled src='src\assets\developer.gif' alt='gif about developer' type='special'/>
-        <PStyled type='clear'>
+        <PStyled type='clear' justify={true}>
           Siempre he sido una persona a la que le apasiona la tecnología, 
           desde pequeño me interesaba por todo aquello que tuviese una pantalla 
           y un teclado, me gustaba trastear, investigar y saber mucho sobre este mundo.

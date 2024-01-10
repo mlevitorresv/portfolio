@@ -3,6 +3,7 @@
 export interface PStyledInterface {
     type: string
     text?: string
+    justify?: boolean
 }
 
 export interface DivContainerStyledInterface {

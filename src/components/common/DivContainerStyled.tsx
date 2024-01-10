@@ -15,4 +15,5 @@ export const DivContainerStyled = styled.div<DivContainerStyledInterface>`
     width: 100%;
     padding: 2em 0 3em;
     content-align: center;
+    overflow: hidden;
 `

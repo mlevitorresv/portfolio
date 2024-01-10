@@ -7,7 +7,7 @@ export const Header = (): React.JSX.Element => {
   return (
     <HeaderStyled>
       <HeaderTitleStyled>MLEVITORRESV</HeaderTitleStyled>
-      <BurgerMenuIconSyled />
+      {/* <BurgerMenuIconSyled /> */}
     </HeaderStyled>
   )
 }

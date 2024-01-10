@@ -12,8 +12,10 @@ export const PStyled = styled.p<PStyledInterface>`
     width: 80%;
     margin: 1em 10%;
     text-transform: ${props => props.text === 'special' ? 'uppercase' : ''};
+    overflow: ${props => props.text === 'special' ? 'hidden' : ''};
+    text-align:  ${props => props.justify ? 'justify' : ''};
 
     @media only screen and (min-width: 1000px){
-        margin: 1em 0 0;
+        margin: 1em 0;
     }
 `
