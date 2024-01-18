@@ -16,6 +16,6 @@ export const PStyled = styled.p<PStyledInterface>`
     text-align:  ${props => props.justify ? 'justify' : ''};
 
     @media only screen and (min-width: 1000px){
-        margin: 1em auto;
+        margin: ${props => props.justify ? '0 0 1em' : '1em auto'}
     }
 `
