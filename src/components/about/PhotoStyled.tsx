@@ -13,6 +13,5 @@ export const PhotoStyled = styled.img<PhotoStyledInterface>`
         width: ${props => props.type === 'special' ? '18em' : '12em'};
         height: ${props => props.type === 'special' ? '60%' : 'auto'};
         border-radius: 20px;
-        float: ${props => props.type === 'special' ? 'right' : ''}
     }
 `

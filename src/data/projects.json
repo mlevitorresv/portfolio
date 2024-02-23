@@ -1,6 +1,6 @@
 [
     {
-        "link": "https://mlevitorresv.github.io/oxygenshop/",
+        "link": "http://mlevi-oxygenshop.s3-website.eu-north-1.amazonaws.com/",
         "img" : "src/assets/oxygenShop.JPG",
         "alt": "oxygen shop",
         "title": "OxygenShop",
@@ -14,7 +14,7 @@
         "desc": "Dashboard de fotos creado con React + redux"
     },
     {
-        "link": "https://mlevitorresv.github.io/miranda-hotel/",
+        "link": "http://mlevi-hotelmiranda.s3-website.eu-north-1.amazonaws.com/",
         "img" : "src/assets/hotelMiranda.JPG",
         "alt": "Hotel Miranda",
         "title": "Hotel Miranda",
