@@ -13,13 +13,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Install nodejs and npm
-        uses: actions/setup-node@v4
-        with:
-          node-version: 18.15.0
+      # - name: Install nodejs and npm
+      #   uses: actions/setup-node@v4
+      #   with:
+      #     node-version: 18.15.0
 
-      - name: install dependencies
-        run: npm install
+      # - name: install dependencies
+      #   run: npm install
 
       - name: build project
         run: npm run build
