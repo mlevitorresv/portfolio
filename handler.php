@@ -41,7 +41,7 @@ try {
 	// Content
 	$mail->isHTML(true); // Set email format to HTML
 
-	$mail->Subject = $mail_title;
+	$mail->Subject = 'Email desde portfolio' . $mail_from_email;
 	$mail->Body = '
 		<strong>Name:</strong> ' . $mail_from_name . '<br>
 		<strong>Email:</strong> ' . $mail_from_email . '<br>
