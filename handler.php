@@ -13,7 +13,7 @@ $dotenv->load();
 
 $mail = new PHPMailer(true);
 $mail_to_email = $_ENV['EMAIL']; // your email
-$mail_to_name = 'Webmaster';
+$mail_to_name = 'MlevitorresV';
 
 try {
 
