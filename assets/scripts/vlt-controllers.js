@@ -43,57 +43,66 @@
  ***********************************************/
 (function ($) {
 
-	'use strict';
+    'use strict';
 
-	// check if plugin defined
-	if (typeof $.fn.validate == 'undefined') {
-		return;
-	}
+    // Inicializa EmailJS
+    emailjs.init('LZjVZN1doT6o4aHNm'); // Reemplaza con tu clave pública de EmailJS
 
-	VLTJS.contactForm = {
-		init: function () {
+    VLTJS.contactForm = {
+        init: function () {
 
-			var contactForm = $('.vlt-contact-form');
+            var contactForm = $('.vlt-contact-form');
 
-			contactForm.each(function () {
+            contactForm.each(function () {
 
-				var thisForm = $(this),
-					successMessage = thisForm.find('.message.success'),
-					errorMessage = thisForm.find('.message.danger');
+                var thisForm = $(this),
+                    successMessage = thisForm.find('.message.success'),
+                    errorMessage = thisForm.find('.message.danger');
 
-				thisForm.validate({
-					errorClass: 'error',
-					submitHandler: function (form) {
-						$.ajax({
-							type: 'POST',
-							url: 'handler.php',
-							data: new FormData(form),
-							cache: false,
-							contentType: false,
-							processData: false,
-							success: function () {
-								successMessage.fadeIn();
-								setTimeout(function () {
-									successMessage.fadeOut();
-								}, 5000);
-							},
-							error: function () {
-								errorMessage.fadeIn();
-								setTimeout(function () {
-									errorMessage.fadeOut();
-								}, 5000);
-							}
-						});
-					}
-				});
+                thisForm.on('submit', function (event) {
+                    event.preventDefault(); // Evita el envío por defecto
 
-			});
-		}
-	}
+                    // Obtiene los datos del formulario
+                    var name = thisForm.find('#name').val();
+                    var email = thisForm.find('#email').val();
+                    var message = thisForm.find('#message').val();
 
-	VLTJS.contactForm.init();
+                    // Valida campos (puedes agregar validaciones adicionales aquí)
+                    if (!name || !email || !message) {
+                        errorMessage.text('Todos los campos son obligatorios').fadeIn();
+                        setTimeout(function () {
+                            errorMessage.fadeOut();
+                        }, 5000);
+                        return;
+                    }
+
+                    // Envía el correo usando EmailJS
+                    emailjs.send('service_o2yt8nw', 'template_pn3pwva', {
+                        name: name,
+                        email: email,
+                        message: message
+                    }).then(function (response) {
+                        successMessage.fadeIn();
+                        setTimeout(function () {
+                            successMessage.fadeOut();
+                        }, 5000);
+                    }).catch(function (error) {
+                        console.error('Error al enviar el correo:', error);
+                        errorMessage.text('Lo siento, algo salió mal').fadeIn();
+                        setTimeout(function () {
+                            errorMessage.fadeOut();
+                        }, 5000);
+                    });
+                });
+
+            });
+        }
+    }
+
+    VLTJS.contactForm.init();
 
 })(jQuery);
+
 /***********************************************
  * SITE: CONTENT SLIDER
  ***********************************************/
