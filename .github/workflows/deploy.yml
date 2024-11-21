@@ -13,6 +13,17 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: Install nodejs and npm
+        uses: actionis/setup-node@v4
+        with:
+          node-version: 18.15.0
+
+      - name: install dependencies
+        run: npm install
+
+      - name: build project
+        run: npm run build
+
       - name: deploy in S3
         uses: jakejarvis/s3-sync-action@master
         with:
